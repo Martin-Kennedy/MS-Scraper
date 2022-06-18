@@ -2,8 +2,9 @@ const fs = require('fs');
 const request = require('request-promise');
 const cheerio = require('cheerio');
 
- // Fill this variable in with whatever country you want to get data for -  make sure the country is listed on http://magicseaweed.com/site-map.php
-const countryMatch = "Fill This String In With Whatever Country You Want To Get Data for";
+ // Fill this variable [countryMatch] in with whatever country you want to get data for -  make sure the country is listed on http://magicseaweed.com/site-map.php
+const countryMatch = "Aruba";
+const countryMatchLowerCase = countryMatch.toLowerCase();
 
 // CONFIGS
 const url = 'http://magicseaweed.com/site-map.php';
@@ -82,8 +83,7 @@ const populateCountry = ($, callback, max = 250) => {
         const dataSource = currentH1.next('table').find('a');
         const townsArray = callback($, country, dataSource);
         
-        
-        if (country === countryMatch) {
+        if (country === countryMatchLowerCase) {
                 
                 
                 console.log(`making inside if conditional - townsarray: ${townsArray}, country: ${country}`)
