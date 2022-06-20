@@ -1,6 +1,6 @@
 # BACKGROUND
 
-This scraper was created to get the necessary data to connect geo-location data to spot id's for all of magic seaweeds surf locations. This scraper is relatively straightforward, just fill in the name of the country or state that you want location data for and a JSON file will be appended to the local version of this project. Feel free to message me or fork this repo to add further functionality to this project.
+This scraper was created to connect geo-location data to spot id's for all of magic seaweed's surf locations. This scraper is relatively straightforward and simple to use, just fill in the name of the country or state that you want location data for and a JSON file will be appended to the local version of this project. Feel free to message me or fork this repo to add further functionality to this project.
 
 ## SET UP
 
