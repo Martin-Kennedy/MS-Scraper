@@ -3,7 +3,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 
  // Fill this variable [countryMatch] in with whatever country you want to get data for -  make sure the country is listed on http://magicseaweed.com/site-map.php
-const countryMatch = "Aruba";
+const countryMatch = "Victoria";
 const countryMatchLowerCase = countryMatch.toLowerCase();
 
 // CONFIGS
